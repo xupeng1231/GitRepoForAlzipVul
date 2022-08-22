@@ -1,0 +1,21 @@
+gen_time:1657141007.83
+*********** r *********
+eax=00000005 ebx=00000001 ecx=0bed0ff8 edx=00000003 esi=07d7fb08 edi=0bed0ff8
+eip=6290d444 esp=07d7fab4 ebp=07d7fb98 iopl=0         nv up ei ng nz ac po cy
+cs=0023  ss=002b  ds=002b  es=002b  fs=0053  gs=002b             efl=00010293
+Zip+0xd444:
+6290d444 0fb75c0802      movzx   ebx,word ptr [eax+ecx+2] ds:002b:0bed0fff=????
+
+
+*********** ub *********
+Zip+0xd430:
+6290d430 53              push    ebx
+6290d431 33c0            xor     eax,eax
+6290d433 55              push    ebp
+6290d434 57              push    edi
+6290d435 39442414        cmp     dword ptr [esp+14h],eax
+6290d439 0f8691000000    jbe     Zip+0xd4d0 (6290d4d0)
+6290d43f 90              nop
+6290d440 0fb71408        movzx   edx,word ptr [eax+ecx]
+
+
